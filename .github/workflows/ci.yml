@@ -12,8 +12,8 @@ name: Create and publish Envkey Docker image
 on:
   workflow_dispatch:
   push:
-    branches:
-      - 'main'
+    tags:
+      - 'v*.*.*'
 
 env:
   REGISTRY: ghcr.io
